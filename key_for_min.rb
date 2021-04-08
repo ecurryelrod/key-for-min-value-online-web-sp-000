@@ -3,11 +3,12 @@
 
 def key_for_min_value(name_hash)
   min_value = 0
+  min_name = nil
   name_hash.each do |name, value|
     if min_value == 0 || value < min_value
       min_value = value 
-      puts "#{name}"
+      min_name = name
     end
   end
-  name
+  min_nme
 end
